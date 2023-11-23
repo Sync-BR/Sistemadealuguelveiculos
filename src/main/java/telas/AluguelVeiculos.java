@@ -40,22 +40,19 @@ public class AluguelVeiculos extends javax.swing.JInternalFrame {
     public AluguelVeiculos()  {
         initComponents();
         DataAtual();
+    
+     
+    }
+    public void IniciarLista() throws Exception{
+        VeiculoListaDAO Todosveiculos = new VeiculoListaDAO();
         try {
-            
             VeiculoListaDAO veiculos = new VeiculoListaDAO();
             veiculos.ListarAllVeiculos();
             veiculos.ListarAllClientes();
         } catch (Exception ex) {
             Logger.getLogger(AluguelVeiculos.class.getName()).log(Level.SEVERE, null, ex);
         }
-   
-     
-    }
-    public void IniciarLista() throws Exception{
-        VeiculoListaDAO Todosveiculos = new VeiculoListaDAO();
-        Todosveiculos.ListarAllVeiculos();
-        
-        
+
         
     }
     
@@ -379,6 +376,7 @@ public static boolean StatusVeiculo;
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         try {
             VeiculoLista.removeAllItems();
+            txtCliente.removeAllItems();
             IniciarLista();
         } catch (Exception ex) {
             Logger.getLogger(AluguelVeiculos.class.getName()).log(Level.SEVERE, null, ex);
