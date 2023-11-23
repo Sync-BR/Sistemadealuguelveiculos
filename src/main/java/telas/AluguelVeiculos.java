@@ -41,6 +41,7 @@ public class AluguelVeiculos extends javax.swing.JInternalFrame {
         initComponents();
         DataAtual();
         try {
+            
             VeiculoListaDAO veiculos = new VeiculoListaDAO();
             veiculos.ListarAllVeiculos();
             veiculos.ListarAllClientes();
@@ -53,6 +54,7 @@ public class AluguelVeiculos extends javax.swing.JInternalFrame {
     public void IniciarLista() throws Exception{
         VeiculoListaDAO Todosveiculos = new VeiculoListaDAO();
         Todosveiculos.ListarAllVeiculos();
+        
         
         
     }
@@ -121,6 +123,7 @@ public class AluguelVeiculos extends javax.swing.JInternalFrame {
         jButton1 = new javax.swing.JButton();
         txtTotal = new javax.swing.JTextField();
         txtCliente = new javax.swing.JComboBox<>();
+        jButton2 = new javax.swing.JButton();
         txtStatus = new javax.swing.JLabel();
 
         setClosable(true);
@@ -187,6 +190,13 @@ public class AluguelVeiculos extends javax.swing.JInternalFrame {
             }
         });
 
+        jButton2.setText("Atualizar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -208,17 +218,20 @@ public class AluguelVeiculos extends javax.swing.JInternalFrame {
                             .addComponent(jLabel8))
                         .addGap(32, 32, 32)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(VeiculoLista, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtDataAluguel)
                             .addComponent(txtDataEntregar)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 339, Short.MAX_VALUE)
+                            .addComponent(jScrollPane1)
                             .addComponent(txtTotal)
+                            .addComponent(txtCliente, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(EntregueSim)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(EntregueNao)
                                 .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(txtCliente, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(VeiculoLista, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton2)))
                         .addGap(13, 13, 13))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -227,7 +240,8 @@ public class AluguelVeiculos extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(VeiculoLista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(VeiculoLista, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
@@ -253,7 +267,7 @@ public class AluguelVeiculos extends javax.swing.JInternalFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(14, 14, 14))
         );
@@ -303,6 +317,7 @@ public static int EntregueVolue  ;
 public static boolean StatusVeiculo;
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         //Verificar se os campos estão vazio
+        
         if (VeiculoLista == null || txtDataAluguel == null || txtDataEntregar == null || txtCliente == null || txtTotal == null || txtObservacao == null) {
             AluguelVeiculos.txtStatus.setText("Prenchar todos os campos");
         } else {
@@ -361,12 +376,22 @@ public static boolean StatusVeiculo;
        
     }//GEN-LAST:event_VeiculoListaActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        try {
+            VeiculoLista.removeAllItems();
+            IniciarLista();
+        } catch (Exception ex) {
+            Logger.getLogger(AluguelVeiculos.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JRadioButton EntregueNao;
     public static javax.swing.JRadioButton EntregueSim;
     public static javax.swing.JComboBox<String> VeiculoLista;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

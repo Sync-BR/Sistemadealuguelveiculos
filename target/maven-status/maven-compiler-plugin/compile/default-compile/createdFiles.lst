@@ -5,5 +5,6 @@ beans\ClienteBeans.class
 telas\CadastrarVeiculo$1.class
 persistencia\ClienteDAO.class
 beans\FaturamentoBeans.class
+telas\AluguelVeiculos$6.class
 telas\VeiculosAtrasado.class
 telas\VeiculosAtrasado$1.class
