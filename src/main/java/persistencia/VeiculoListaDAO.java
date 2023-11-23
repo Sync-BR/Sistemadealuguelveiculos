@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import util.Conexao;
 import java.sql.SQLException;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import telas.AluguelVeiculos;
 import telas.CadastrarVeiculo;
@@ -19,80 +20,66 @@ import telas.TelaFaturamento;
 
 public  class VeiculoListaDAO implements VeiculoListaDAOListener{
 
-
-    public  boolean ListarAllVeiculos() throws Exception{
-           PreparedStatement stm = null;
-           Connection Conexao = null;
-            ResultSet rs = null;
-           Conexao conexao = new Conexao();
-           //Array list
-            List<String > VeiculoList = new ArrayList<>();
-           try {
-               Conexao conection = new Conexao();
-               Conexao = conection.getconnection();
-               String sql = "SELECT modelo FROM icmnts66_locadora.veiculo";
-                stm = Conexao.prepareStatement(sql);
-   
-                rs = stm.executeQuery();
-                
-                    while (rs.next()) {    
-                        
-                        String VeiculoNomes = rs.getString("modelo");
-                        VeiculoList.add(VeiculoNomes);
-                     
-                     }
-                    
-                    for(int i = 0; i < VeiculoList.size(); i++){
-                        System.out.println(VeiculoList.get(i));
-                     AluguelVeiculos.VeiculoLista.addItem(VeiculoList.get(i));
-                    
-                    }
-
-           } catch (SQLException e) {
-               e.printStackTrace();
-            
+    //Listar todos veiculos
+    public boolean ListarAllVeiculos() throws Exception {
+        PreparedStatement stm = null;
+        Connection Conexao = null;
+        ResultSet rs = null;
+        //Array list
+        List<String> VeiculoList = new ArrayList<>();
+        try {
+            Conexao conection = new Conexao();
+            Conexao = conection.getconnection();
+            String sql = "SELECT modelo FROM icmnts66_locadora.veiculo";
+            stm = Conexao.prepareStatement(sql);
+            rs = stm.executeQuery();
+            while (rs.next()) {
+                String VeiculoNomes = rs.getString("modelo");
+                VeiculoList.add(VeiculoNomes);
             }
+
+            for (int i = 0; i < VeiculoList.size(); i++) {
+                AluguelVeiculos.VeiculoLista.addItem(VeiculoList.get(i));
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Erro ao Listar veículos cadastrado");
+
+        }
         return false;
-   
+
     }
 @Override
-    
-    public  boolean ListarAllClientes() throws Exception{
-           PreparedStatement stm = null;
-           Connection Conexao = null;
-            ResultSet rs = null;
-           Conexao conexao = new Conexao();
-           //Array list
-            List<String > ClienteList = new ArrayList<>();
-           try {
-               Conexao conection = new Conexao();
-               Conexao = conection.getconnection();
-               String sql = "SELECT cliente.nomeCliente FROM icmnts66_locadora.cliente";
-                stm = Conexao.prepareStatement(sql);
-   
-                rs = stm.executeQuery();
-                
-                    while (rs.next()) {    
-                        
-                        String ClientesNomes = rs.getString("nomeCliente");
-                        ClienteList.add(ClientesNomes);
-                     
-                     }
-                    
-                    for(int i = 0; i < ClienteList.size(); i++){
-                    
-                     AluguelVeiculos.txtCliente.addItem(ClienteList.get(i));
-                    
-                    }
-
-           } catch (SQLException e) {
-               e.printStackTrace();
-            
+    //Lista clientes
+    public boolean ListarAllClientes() throws Exception {
+        PreparedStatement stm = null;
+        Connection Conexao = null;
+        ResultSet rs = null;
+        Conexao conexao = new Conexao();
+        //Array list
+        List<String> ClienteList = new ArrayList<>();
+        try {
+            Conexao conection = new Conexao();
+            Conexao = conection.getconnection();
+            String sql = "SELECT cliente.nomeCliente FROM icmnts66_locadora.cliente";
+            stm = Conexao.prepareStatement(sql);
+            rs = stm.executeQuery();
+            while (rs.next()) {
+                String ClientesNomes = rs.getString("nomeCliente");
+                ClienteList.add(ClientesNomes);
             }
+            for (int i = 0; i < ClienteList.size(); i++) {
+                AluguelVeiculos.txtCliente.addItem(ClienteList.get(i));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "Erro ao Listar veículos Clientes");
+        }
         return false;
-   
     }
     @Override
+    //Listar Alugueis
    public void ListarAlugueis() throws Exception{
            PreparedStatement stm = null;
            Connection Conexao = null;
@@ -137,6 +124,7 @@ public  class VeiculoListaDAO implements VeiculoListaDAOListener{
 
                 } catch (SQLException e) {
                     e.printStackTrace();
+                    JOptionPane.showMessageDialog(null, "Erro ao Listar todos alugueis");
 
                  }
    

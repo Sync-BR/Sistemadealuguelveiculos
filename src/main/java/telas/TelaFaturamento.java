@@ -4,7 +4,7 @@
  */
 package telas;
 
-import persistencia.Datadao;
+import persistencia.DataDAO;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
@@ -28,7 +28,7 @@ public class TelaFaturamento extends javax.swing.JInternalFrame {
     }
     public TelaFaturamento() {
         initComponents();
-        Datadao.DataFaturamento();
+        DataDAO.DataFaturamento();
     }
 
     /**

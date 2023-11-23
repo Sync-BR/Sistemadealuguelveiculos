@@ -242,7 +242,6 @@ public class AluguelDAO  implements  AluguelDAOListener{
                 PesquisarAluguel.txtDataAluguel.setText(" " + DataAluguel);
                 PesquisarAluguel.txtDataEntregar.setText("" + DataEntrega);
                 PesquisarAluguel.txtCliente.setText("" + ClienteNome);
-                PesquisarAluguel.txtStatus.setText("Cliente encontrado " + ClienteNome);
                     //Verificar o tipo do Status do veiculo
                     if (StatusEntregar == true) {
                         PesquisarAluguel.txtStatusEntregue.setSelected(true);
@@ -319,9 +318,7 @@ public class AluguelDAO  implements  AluguelDAOListener{
 
             } else{
               ConsultarAluguel = false;
-    
             JOptionPane.showMessageDialog(null, "Veiculo não encontrado", "Erro", JOptionPane.ERROR_MESSAGE);
-            // PesquisarAluguel.BtnEditar.setEnabled(false);
            
             }
         } catch (SQLException ex) {

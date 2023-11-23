@@ -9,7 +9,7 @@ import java.util.Locale;
 import telas.AluguelVeiculos;
 import static telas.TelaFaturamento.txtFaturamentoData;
 
-public class Datadao {
+public class DataDAO {
 
 public  static void  DataViwer(){
         Calendar calendar = Calendar.getInstance();

@@ -5,7 +5,7 @@
 package telas;
 
 import beans.AluguelBeans;
-import persistencia.Datadao;
+import persistencia.DataDAO;
 import persistencia.VeiculoListaDAO;
 
 import java.text.ParseException;
