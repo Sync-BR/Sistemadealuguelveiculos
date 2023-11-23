@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-shared-configuration>
+    <!--
+This file contains additional configuration written by modules in the NetBeans IDE.
+The configuration is intended to be shared among all the users of project and
+therefore it is assumed to be part of version control checkout.
+Without this configuration present, some functionality in the IDE may be limited or fail altogether.
+-->
+    <properties xmlns="http://www.netbeans.org/ns/maven-properties-data/1">
+        <!--
+Properties that influence various parts of the IDE, especially code formatting and the like. 
+You can copy and paste the single properties, into the pom.xml file and the IDE will pick them up.
+That way multiple projects can share the same settings (useful for formatting rules for example).
+Any value defined here will override the pom.xml file value but is only applicable to the current project.
+-->
+        <org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.enable-indent>true</org-netbeans-modules-editor-indent.text.x-java.CodeStyle.project.enable-indent>
+        <org-netbeans-modules-editor-indent.CodeStyle.usedProfile>project</org-netbeans-modules-editor-indent.CodeStyle.usedProfile>
+        <org-netbeans-spi-editor-hints-projects.perProjectHintSettingsEnabled>true</org-netbeans-spi-editor-hints-projects.perProjectHintSettingsEnabled>
+        <org-netbeans-modules-javascript2-requirejs.enabled>true</org-netbeans-modules-javascript2-requirejs.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_RAWTYPES.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_RAWTYPES.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_UniqueEntityName.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_UniqueEntityName.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_OnlyEntityOrMappedSuperclassCanUseIdClass.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_OnlyEntityOrMappedSuperclassCanUseIdClass.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_LegalCombinationOfAnnotations.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_LegalCombinationOfAnnotations.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_RemoteAnnotatedBeanHasRBI.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_RemoteAnnotatedBeanHasRBI.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_QueriesProperlyDefined.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_QueriesProperlyDefined.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_SessionSynchImplementedBySFSBOnly.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_SessionSynchImplementedBySFSBOnly.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_OVERRIDES.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_OVERRIDES.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_BeanImplementsBI.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_BeanImplementsBI.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_BusinessMethodExposed.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_BusinessMethodExposed.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_JPAAnnotsOnlyOnAccesor.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_JPAAnnotsOnlyOnAccesor.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_PublicClass.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_PublicClass.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_SerializableClass.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_SerializableClass.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_UNCHECKED.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_UNCHECKED.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_web_2e_jsf_2e_hints_2e_FlowScopedBeanWithoutCdi.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_web_2e_jsf_2e_hints_2e_FlowScopedBeanWithoutCdi.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_ConsistentAccessType.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_ConsistentAccessType.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_ValueNotSpecifiedForRemoteAnnotationInterface.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_ValueNotSpecifiedForRemoteAnnotationInterface.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_NoIdClassOnEntitySubclass.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_NoIdClassOnEntitySubclass.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_AsynchronousMethodInvocation.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_AsynchronousMethodInvocation.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_DEPRECATED.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_DEPRECATED.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_ValidPrimaryTableName.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_ValidPrimaryTableName.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_UNNECESSARY_5f_CAST.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_UNNECESSARY_5f_CAST.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_SBSuperClassNotSB.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_SBSuperClassNotSB.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_BeanHasDifferentLBIandRBI.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_BeanHasDifferentLBIandRBI.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_FALLTHROUGH.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_FALLTHROUGH.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_web_2e_jsf_2e_hints_2e_JavaxFacesBeanIsGonnaBeDeprecated.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_web_2e_jsf_2e_hints_2e_JavaxFacesBeanIsGonnaBeDeprecated.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_JPQLValidation.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_JPQLValidation.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_SERIALIZATION.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_SERIALIZATION.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_ValidAttributes.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_ValidAttributes.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_PersistenceUnitPresent.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_PersistenceUnitPresent.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_IdClassOverridesEqualsAndHashCode.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_IdClassOverridesEqualsAndHashCode.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_HasNoArgConstructor.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_HasNoArgConstructor.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_TopLevelClass.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_TopLevelClass.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_AnnotationPostContruct.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_AnnotationPostContruct.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_FINALLY.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_FINALLY.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_NonFinalClass.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_NonFinalClass.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_UseInjectionInsteadOfInstantionRule.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_UseInjectionInsteadOfInstantionRule.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_BMnotPartOfRBIandLBI.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_BMnotPartOfRBIandLBI.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_EMPTY_5f_STATEMENT_5f_AFTER_5f_IF.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_EMPTY_5f_STATEMENT_5f_AFTER_5f_IF.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_PersistentTimerInEjbLite.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_PersistentTimerInEjbLite.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.org_2e_netbeans_2e_modules_2e_java_2e_hints_2e_ClassStructure_2e_classMayBeInterface.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.org_2e_netbeans_2e_modules_2e_java_2e_hints_2e_ClassStructure_2e_classMayBeInterface.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_LegalModifiers.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_LegalModifiers.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_HasNoArgContructor.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_HasNoArgContructor.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_LocalAnnotatedBeanHasLBI.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_LocalAnnotatedBeanHasLBI.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_IdDefinedInHierarchy.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_jpa_2e_verification_2e_IdDefinedInHierarchy.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_WSisSLSB.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.o_2e_n_2e_m_2e_j2ee_2e_ejbverification_2e_WSisSLSB.enabled>
+        <org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_DIVISION_5f_BY_5f_ZERO.enabled>true</org-netbeans-spi-editor-hints-projects.text.x-java.Javac_5f_DIVISION_5f_BY_5f_ZERO.enabled>
+    </properties>
+</project-shared-configuration>
