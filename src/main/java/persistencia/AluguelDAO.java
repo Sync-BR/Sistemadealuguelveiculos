@@ -39,14 +39,14 @@ public class AluguelDAO  implements  AluguelDAOListener{
     public static boolean ExisteveiculonoAluguel;
     //Verificar se existe o veiculo no Aluguel
     public  void verificarVeiculoAlugado(String veiculo) throws Exception {
-        Connection Conexao = null;
+        Connection conexao = null;
         PreparedStatement stm = null;
         ResultSet rs = null;
         try {
             String sql = "SELECT * FROM icmnts66_locadora.aluguel WHERE veiculo = ?";
-            Conexao conection = new Conexao();
-            Conexao = conection.getconnection();
-            stm = Conexao.prepareStatement(sql);
+       //     Conexao conection = new Conexao();
+            conexao = Conexao.getconnection();
+            stm = conexao.prepareStatement(sql);
             stm.setString(1, veiculo);
             rs = stm.executeQuery();
             // Receber resultado
@@ -61,6 +61,8 @@ public class AluguelDAO  implements  AluguelDAOListener{
             e.printStackTrace();
             JOptionPane.showMessageDialog(null, e, " Erro ao verificar se existe Aluguel",
                     JOptionPane.INFORMATION_MESSAGE);
+        } finally{
+            Conexao.closeConnection(conexao,stm,rs);
         }
 
     }
@@ -192,6 +194,8 @@ public class AluguelDAO  implements  AluguelDAOListener{
                             AluguelVeiculos.txtStatus.setText(" Foi inserido com sucesso");
                         } catch (SQLException ex) {
                               throw new Exception("Erro ao inserir aluguel por número");
+                        } finally{
+                            Conexao.closeConnection(conexao,ps);
                         }
                     } else {
                         AluguelPendente = false;
@@ -264,7 +268,7 @@ public class AluguelDAO  implements  AluguelDAOListener{
         } catch (SQLException ex) {
               throw new Exception("Erro ao consultar aluguel por id");
         } finally {
-           Conexao.closeConnection(conexao, stm);
+           Conexao.closeConnection(conexao, stm,rs);
             }
         }
 
@@ -352,6 +356,8 @@ public class AluguelDAO  implements  AluguelDAOListener{
                 }
         } catch (SQLException e) {
               throw new Exception("Erro ao Atualizar veículo ");
+        } finally{
+            Conexao.closeConnection(conexao,stm);
         }
 
     }
@@ -359,10 +365,11 @@ public class AluguelDAO  implements  AluguelDAOListener{
   
     // Apagar veiculo
     public void DeletarAluguel(AluguelBeans id) throws Exception {
-        Connection conexao;
+        Connection conexao = null;
         PreparedStatement stm = null;
+        Conexao conection = new Conexao();
         try {
-            conexao = Conexao.getconnection();
+            conexao = conection.getconnection();
             String sqlDeletar = "DELETE FROM icmnts66_locadora.aluguel WHERE idaluguel = ?";
             stm = conexao.prepareStatement(sqlDeletar);
             stm.setInt(1, id.getIdaluguel());
@@ -376,6 +383,8 @@ public class AluguelDAO  implements  AluguelDAOListener{
               throw new Exception("Erro ao deletar veículo por número");
           
 
+        } finally{
+            Conexao.closeConnection(conexao,stm);
         }
 
     }
