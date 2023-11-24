@@ -40,7 +40,7 @@ public class AluguelVeiculos extends javax.swing.JInternalFrame {
     public AluguelVeiculos()  {
         initComponents();
         DataAtual();
-    
+  
      
     }
     public void IniciarLista() throws Exception{
@@ -370,7 +370,7 @@ public static boolean StatusVeiculo;
     }//GEN-LAST:event_txtDataAluguelActionPerformed
 
     private void VeiculoListaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VeiculoListaActionPerformed
-       
+
     }//GEN-LAST:event_VeiculoListaActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

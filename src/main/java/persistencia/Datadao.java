@@ -1,15 +1,19 @@
 
 package persistencia;
-
 import beans.AluguelBeans;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 import telas.AluguelVeiculos;
+import persistencia.DataDAO;
 import static telas.TelaFaturamento.txtFaturamentoData;
 
 public class DataDAO {
+
+    public DataDAO() {
+    }
+    
 
 public  static void  DataViwer(){
         Calendar calendar = Calendar.getInstance();
